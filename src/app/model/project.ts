@@ -1,9 +1,11 @@
 
 
-export interface Course {
+export interface Project {
     id: number;
     description: string;
     thumbUrl: string;
     longDescription: string;
+    projectUrl: string;
+    gitHubUrl: string;
     skills: string[];
 }
