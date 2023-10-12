@@ -1,1 +1,182 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* // variables */
+  --primary-color: rgba(3, 3, 3, 0.806);
+  --secondary-color: goldenrod;
+  --light-text-color: #eee;
+  --light-btn-border-color: #b3b3b3;
+  --dark-text-color: #222;
+  --image-container-height: 100px;
+  --image-height: 16rem;
+  --image-max-width: 24rem;
+  --top-padding-adjustment: 60px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  margin: 1.5rem;
+}
+#projects {
+  margin: 0 1.5rem 1.5rem 1rem;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: var(--primary-color);
+  width: 100%;
+  opacity: 80%;
+}
+#header-img {
+  height: 40px;
+  filter: grayscale(100%);
+  opacity: var(--top-padding-adjustment);
+}
+#brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-text-color);
+  border: solid var(--primary-color) 3px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--light-text-color);
+  padding: 0 1rem;
+}
+#welcome-section {
+  padding-top: var(--top-padding-adjustment);
+  margin-bottom: 1rem;
+}
+.lg-heading {
+  font-size: 3rem;
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+/* Projects */
+#projects {
+  padding-top: var(--top-padding-adjustment);
+  margin-bottom: 1rem;
+}
+.projects {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  background-color: pink; //transparent;
+  padding: 0.5rem;
+}
+.project-card {
+  width: 100%;
+}
+.a-thumb {
+  height: var(--image-height);
+}
+.projects img.thumbNail {
+  height: var(--image-height);
+  width: 100%;
+  object-fit: cover;
+  border: 0.2rem rgba(238, 238, 238, 0.8) solid;
+}
+.projects img.thumbNail:hover {
+  opacity: 0.5;
+  border-color: var(--secondary-color);
+  transition: all 0.7s ease-out;
+}
+.projects .projImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--image-height);
+  width: 100%;
+  border: 0.2rem var(--light-btn-border-color) solid;
+  position: relative;
+  background: url(https://curt-g-fcc-portfolio.netlify.app/images/vscode-react-medium-screenshot.jpg);
+  background-size: content;
+}
+.projects .projImageContainer:hover {
+  opacity: 0.5;
+  border-color: var(--secondary-color);
+  transition: all 0.7s ease-out;
+}
+.projects .projImageContainer .projThumbnail {
+  position: absolute;
+  height: 96%;
+  top: 2%;
+  max-width: 90%;
+  border-radius: 0.2rem;
+  object-fit: scale-down;
+}
+.button,
+.button-dark,
+.button-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin: 0.5rem 0;
+}
+.button:hover,
+.button-dark:hover,
+.button-light:hover {
+  background: var(--secondary-color);
+  color: var(--dark-text-color);
+}
+
+.button-dark {
+  background: var(--primary-color);
+  color: var(--light-text-color);
+}
+
+.button-light {
+  background: var(--light-btn-border-color);
+  color: var(--dark-text-color);
+}
+
+@media screen and (min-width: 767px) {
+  .lg-heading {
+    font-size: 4rem;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
