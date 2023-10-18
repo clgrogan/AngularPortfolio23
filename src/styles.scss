@@ -92,13 +92,10 @@ h3 {
   margin-bottom: 1rem;
 }
 .projects {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
-  background-color: pink; //transparent;
+  background-color: transparent;
   padding: 0.5rem;
 }
 .project-card {
@@ -106,11 +103,13 @@ h3 {
 }
 .a-thumb {
   height: var(--image-height);
+  background-image: url("https://curt-g-fcc-portfolio.netlify.app/images//VSCodeEditorOpacity.png");
+  // object-fit: cover;
 }
 .projects img.thumbNail {
   height: var(--image-height);
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border: 0.2rem rgba(238, 238, 238, 0.8) solid;
 }
 .projects img.thumbNail:hover {

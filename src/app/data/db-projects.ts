@@ -28,6 +28,37 @@ export const PROJECTS: any = [
     projectUrl: "https://github-followers-angular-project.netlify.app",
     gitHubUrl: "https://github.com/clgrogan/GitHubFollowersExercise-NG",
     skills: ["Angular", "Typescript", "Javascript", "SCSS", "CSS", "HTML"]
+  },
+  {
+    id: 4,
+    description: "Vanilla (HTML/CSS) Portfolio",
+    thumbUrl: "https://curt-g-fcc-portfolio.netlify.app/images/VanillaPortfolioAnimated.gif",
+    altText: "Animated screenshots of the Vanilla Portfolio",
+    longDescription: "This project is built using HTML5, and SCSS/SASS (CSS3).",
+    projectUrl: "https://curtg.netlify.com/",
+    gitHubUrl: "https://github.com/clgrogan/My-Portfolio-Vanilla",
+    skills: ["Javascript", "SCSS", "CSS", "HTML"]
   }
+  ,
+  {
+    id: 5,
+    description: "Spring Boot Rest API",
+    thumbUrl: "https://curt-g-fcc-portfolio.netlify.app/images/spring-api-logo.png",
+    altText: "Spring and Rest API Logos",
+    longDescription: "Built using Maven, Spring Boot, Spring Security, Hibernate, and Java to serve a restful API.",
+    projectUrl: "https://github.com/clgrogan/SurveyRestAPI/tree/main/src/main/java/com/restapi",
+    gitHubUrl: "https://github.com/clgrogan/SurveyRestAPI",
+    skills: ["Javascript", "SCSS", "CSS", "HTML"]
+  }
+  // {
+  //   id: ,
+  //   description: "",
+  //   thumbUrl: "",
+  //   altText: "",
+  //   longDescription: "",
+  //   projectUrl: "",
+  //   gitHubUrl: "",
+  //   skills: [ "Javascript", "SCSS", "CSS", "HTML"]
+  // }
 
 ];
