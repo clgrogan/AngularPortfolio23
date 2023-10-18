@@ -11,7 +11,7 @@ export const PROJECTS: any = [
   },
   {
     id: 2,
-    description: "Full Stack React / C# .NET",
+    description: "Full Stack React / C# .NET / PostgreSQL",
     thumbUrl: "https://curt-g-fcc-portfolio.netlify.app/images/project1WalkThrough.gif",
     altText: "Photo of computer and phone with application on the screens.",
     longDescription: "Mobile-First Shopping List App ⬧ (aka: Honey Get List) Full-Stack App. Front-End (Client-side) responsive SPA application using HTML, CSS, JavaScript (JS), React and Axios for API. Back-End (Server-side) using .NET, C#, EF Core with an SQL database. Deployed to Netlify using yarn and Heroku utilizing Docker.",
@@ -43,7 +43,7 @@ export const PROJECTS: any = [
   {
     id: 5,
     description: "Spring Boot Rest API",
-    thumbUrl: "https://curt-g-fcc-portfolio.netlify.app/images/spring-api-logo.png",
+    thumbUrl: "https://curt-g-fcc-portfolio.netlify.app/images/spring-api-logo-bg.png",
     altText: "Spring and Rest API Logos",
     longDescription: "Built using Maven, Spring Boot, Spring Security, Hibernate, and Java to serve a restful API.",
     projectUrl: "https://github.com/clgrogan/SurveyRestAPI/tree/main/src/main/java/com/restapi",
