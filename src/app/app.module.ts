@@ -7,7 +7,8 @@ import appRoutes from './routerConfig';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
+// import { AboutComponent } from './about/about.component';
+// import { ExperienceCardComponent } from './experience-card/experience-card.component';
 // import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AboutComponent } from './about/about.component';
     PageNotFoundComponent,
     HeaderComponent,
     HomeComponent,
-    AboutComponent,
+    // AboutComponent,
+    // ExperienceCardComponent,
     // ProjectCardComponent
   ],
   imports: [
