@@ -1,35 +1,16 @@
-<div class="job job-1">
+<div class="job">
   <div>
-    <h3>Suncoast Developers Guild</h3>
-    <h6>Full Stack Developer Immersive Bootcamp</h6>
+    <h3>{{ experience.organization }}</h3>
+    <h6>{{ experience.role }}</h6>
     <p>
-      Web Developer Certificate earned via the immersive full-time web
-      development program on campus in St. Petersburg, FL. Front-end
-      (client-side) and back-end (server-side) programming facilitated via
-      project-based learning.<br />
-      The <a href="work.html" class="nav-link hyperlink">Projects</a> page
-      highlights some of the projects I completed including the capstone project
-      which was a full-stack application.
+      {{ experience.description }}
     </p>
   </div>
   <ul>
-    <li class="tech-stack">
-      Front-end:
-      <span class="items">
-        React, Axios, JavaScript, HTML5, CSS3, and SASS/SCSS</span
-      >
-    </li>
-    <li class="tech-stack">
-      Back-end:
-      <span class="items"
-        >C# | .NET Framework, Entity Framework Core, PostgreSQL, and REST
-        API</span
-      >
-    </li>
-    <li class="tech-stack">
-      Tools:
-      <span class="items">
-        Visual Studio Code (VS Code), GIT, GitHub, Docker, Heroku and Netlify
+    <li *ngFor="let stack of experience.techStack">
+      {{ stack.category }}:&nbsp;
+      <span class="items" *ngFor="let skill of stack.skills"
+        >{{ skill }}&nbsp;&nbsp;
       </span>
     </li>
   </ul>

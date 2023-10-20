@@ -38,8 +38,6 @@ main {
 
       &:hover {
         color: var(--secondary-color);
-        // transition: all 777ms ease-out; //replaced with mixin
-        // @include easeOut;
       }
     }
   }
@@ -52,6 +50,52 @@ main {
 }
 #projects {
   margin: 0 1.5rem 1.5rem 1rem;
+}
+.about-info {
+  display: grid;
+  grid-gap: 1.9rem;
+  grid-template-areas: "bioimage bio bio";
+  grid-template-columns: repeat(3, 1fr);
+  .profile-image {
+    width: 20vh;
+    height: 20vh;
+    border: solid 0.2rem var(--secondary-color);
+    border-radius: 50%;
+  }
+
+  .bio-image {
+    grid-area: bioimage;
+    width: 30vh;
+    height: 30vh;
+    margin: auto;
+    border: solid 0.2rem var(--secondary-color);
+    border-radius: 50%;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+    .quote {
+      font-family: trebuchet, sans-serif, Tahoma, Geneva, Verdana;
+      font-style: italic;
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0.8rem;
+    color: var(--secondary-color);
+    .items {
+      color: var(--light-text-color);
+      font-style: italic;
+      font-size: smaller;
+    }
+  }
+  .job {
+    background: lighten(#333, 5);
+    padding: 0.4rem;
+    border-bottom: var(--secondary-color) 0.3rem solid;
+    height: 100%;
+  }
 }
 h1,
 h2,

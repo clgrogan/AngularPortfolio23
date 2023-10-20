@@ -1,7 +1,10 @@
-import { TechStack } from "./TechStack";
+import { TechStack } from "./techstack";
+
+
 export interface Experience {
     id: number;
     organization: string;
     role: string;
-    techStack: TechStack;
+    description: string;
+    techStack: TechStack[];
 }

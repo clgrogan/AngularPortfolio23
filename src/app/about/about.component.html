@@ -5,7 +5,7 @@
   <section class="about-info">
     <img
       class="bio-image"
-      src="./images/headshotsdg.jpg"
+      src="https://curtg.netlify.app/images/headshotsdg.jpg"
       alt="Curt Grogan Bio Picture"
     />
     <div class="bio">
@@ -27,51 +27,9 @@
         >
       </p>
     </div>
-    <app-experience-card></app-experience-card>
-    <div class="job job-2">
-      <h3>FDM Group</h3>
-      <h6>Software Engineer</h6>
-      <p>
-        I am a software engineer with a range of responsibilities, including:
-        writing, developing, testing, and reviewing code. After successfully
-        completing FDM's industry recognized training I have worked on multiple
-        projects. Our projects utilize Agile methodologies and I serve as a
-        front-end & back-end developer, and as a Scrum Master at times.
-      </p>
-
-      <ul>
-        <li class="tech-stack">
-          Languages:
-          <span class="items">
-            Java, TypeScript, JavaScript, HTML5, CSS3, SQL, SOQL, and Apex</span
-          >
-        </li>
-        <li class="tech-stack">
-          Frameworks, Libraries, etc.:
-          <span class="items"
-            >Angular, Spring Framework, Thymeleaf, and JUnit</span
-          >
-        </li>
-        <li class="tech-stack">
-          Tools:
-          <span class="items">
-            Eclipse, Maven, Tomcat, VS Code, Oracle SQL Developer, GIT, GitLab,
-            and Salesforce
-          </span>
-        </li>
-      </ul>
-    </div>
-    <div class="job job-3">
-      <h3>Greenway Health</h3>
-      <h6>Workforce Management Analyst</h6>
-      <p>
-        Consistently a top performer starting out as a software support
-        technician for Electronic Healthcare Records software, then moving into
-        a supervisory role on the support team, and culminating in joining the
-        new Workforce Management team successfully implementing a new WFM system
-        for scheduling, monitoring, and reporting for the call center and back
-        office teams.
-      </p>
-    </div>
+    <experience-card
+      *ngFor="let experience of experiences"
+      [experience]="experience"
+    ></experience-card>
   </section>
 </main>
