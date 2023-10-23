@@ -1,5 +1,5 @@
 import { Skills } from "./skills";
-import { TechStack } from "./techstack";
+// import { TechStack } from "./techstack";
 
 
 
@@ -8,6 +8,5 @@ export interface Experience {
     organization: string;
     role: string;
     description: string;
-    techStack: TechStack[];
-    skills: Skills[];
+    techStack: Skills[];
 }
