@@ -1,4 +1,6 @@
+import { Skills } from "./skills";
 import { TechStack } from "./techstack";
+
 
 
 export interface Experience {
@@ -7,4 +9,5 @@ export interface Experience {
     role: string;
     description: string;
     techStack: TechStack[];
+    skills: Skills[];
 }

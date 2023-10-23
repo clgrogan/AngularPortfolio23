@@ -15,6 +15,6 @@ export class ExperienceCardComponent {
   experience: Experience;
 
   @Input()
-  techStack: Experience["techStack"];
+  techStack: Experience["skills"];
 
 }
