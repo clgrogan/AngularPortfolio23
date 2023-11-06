@@ -32,7 +32,6 @@ export const PROJECTS: any = [
   {
     id: 4,
     description: "Vanilla (HTML/CSS) Portfolio",
-    // thumbUrl: "../assets/images/VanillaPortfolioAnimated.gif",
     thumbUrl: "../assets/images/VanillaPortfolioAnimated.gif",
     altText: "Animated screenshots of the Vanilla Portfolio",
     longDescription: "This project is built using HTML5, and SCSS/SASS (CSS3).",
