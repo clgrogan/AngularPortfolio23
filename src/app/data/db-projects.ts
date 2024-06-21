@@ -35,7 +35,7 @@ export const PROJECTS: any = [
     thumbUrl: "../assets/images/VanillaPortfolioAnimated.gif",
     altText: "Animated screenshots of the Vanilla Portfolio",
     longDescription: "This project is built using HTML5, and SCSS/SASS (CSS3).",
-    projectUrl: "https://curtg.netlify.com/",
+    projectUrl: "https://curtg.netlify.app/",
     gitHubUrl: "https://github.com/clgrogan/My-Portfolio-Vanilla",
     skills: ["Javascript", "SCSS", "CSS", "HTML"]
   }
