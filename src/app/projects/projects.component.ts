@@ -1,9 +1,9 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, inject } from '@angular/core';
 import { AppModule } from '../app.module';
 import { ProjectCardComponent } from '../project-card/project-card.component';
-import { PROJECTS } from '../data/db-projects';
-import { Project } from '../model/project';
+import { ProjectService } from '../projects.service';
 import { CommonModule } from '@angular/common';
+import { Project } from '../model/project';
 
 @Component({
   selector: 'app-projects',
@@ -14,9 +14,13 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectsComponent {
 
-  projects = PROJECTS;
+  projectService: ProjectService = inject(ProjectService);
+  projectList: Project[] = [];
 
-  p1 = PROJECTS[0];
+  constructor() {
+    this.projectList = this.projectService.getAllProjects();
+    console.log(this.projectList);
+  }
 
   @ViewChild('projectCard')
   projectCard: ProjectCardComponent;
